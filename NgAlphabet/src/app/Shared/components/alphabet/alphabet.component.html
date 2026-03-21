@@ -1,0 +1,58 @@
+@if (Letters) {
+  <div class="Card MB-2">
+    <div class="Card-body">
+      @for (letter of Letters; track $index) {
+        <button class="Btn Btn-sm Btn-outline MR-1 MB-1"
+                [class.Btn-dark]="letter.Type==LetterType.Separator"
+                [class.Btn-primary]="letter.Type==LetterType.Vowel"
+                [class.Btn-secondary]="letter.Type==LetterType.Consonants"
+                [class.Btn-night]="letter.Type==LetterType.Syllable"
+                (click)="onClick(letter)">
+          {{ letter.Value }}
+          @for (svg of letter.Vectors; track $index) {
+            <div class="D-inline ME-1">
+              <app-svg [Svg]="svg"></app-svg>
+            </div>
+            <div
+              class="PX-2 Position-absolute Top-0 Start-50 Translate-middle Badge Rounded-pill Bg-danger Fg-white FS-6">
+              {{ letter.Value }}
+              <span class="Visually-hidden">Letter</span>
+            </div>
+          }
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="Card MB-2">
+    <div class="Card-body ">
+      <div [class.Text-end]="IsTextRight">
+        <span [innerHTML]="Sentence"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="Card MB-2">
+    <div class="Card-body ">
+      <div [class.Text-end]="IsTextRight">
+        <div>{{ SentenceReadable }}</div>
+      </div>
+      <div class="Form">
+<!--        <textarea class="Form-control Scrollbar" rows="5" required [value]="Sentence"></textarea>-->
+        <textarea class="Form-control Scrollbar" rows="5" required [innerHTML]="Sentence"></textarea>
+        <label class="Form-label">Textarea</label>
+      </div>
+      @if (Deciphered) {
+        <p>
+          <strong>Original:</strong> {{ Deciphered.Original }}
+          <strong>Reverse:</strong> {{ Deciphered.Reverse }}
+        </p>
+      }
+      <p>
+        <button type="button" class="Btn Btn-outline Btn-danger MR-2" (click)="onClear()">Clear</button>
+        <button type="button" class="Btn Btn-outline Btn-info" (click)="onDecipher()">Decipher</button>
+      </p>
+      <a href="https://htmledit.squarefree.com/" target="_blank">real-time HTML editor</a>
+    </div>
+  </div>
+}

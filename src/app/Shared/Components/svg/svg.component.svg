@@ -1,6 +1,0 @@
-<svg *ngIf="Svg" xmlns="http://www.w3.org/2000/svg"
-     [attr.viewBox]="Svg.viewBox" [attr.width]="Svg.width" [attr.height]="Svg.height">
-  <g [attr.transform]="Svg.transform?Svg.transform:''">
-    <path *ngFor="let path of Svg.paths" [style]="SanitizeStyle(path.style)" [attr.d]="path.d"></path>
-  </g>
-</svg>

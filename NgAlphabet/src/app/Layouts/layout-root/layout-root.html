@@ -1,0 +1,29 @@
+<nav class="Navbar Navbar-expand-lg Navbar-dark Bg-dark Position-fixed Top-0 W-100" style="z-index: 1030;">
+  <div class="Container-fluid">
+    <a class="Navbar-brand" [routerLink]="['/Home']"
+       [routerLinkActive]="'Active'" [routerLinkActiveOptions]="{exact:false}">Home</a>
+    <button class="Navbar-toggler" type="button"
+            data-ls-toggle="collapse" data-ls-target="#navbarNav"
+            (click)="toggle=!toggle"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="Navbar-toggler-icon"></span>
+    </button>
+    <div class="Collapse Navbar-collapse" [class.Show]="toggle" id="navbarNavAltMarkup">
+      <div class="Navbar-nav">
+        <a class="Nav-link" [routerLink]="['/Home/Aurebesh']"
+           [routerLinkActive]="'Active'" [routerLinkActiveOptions]="{exact:false}">Aurebesh</a>
+        <a class="Nav-link" [routerLink]="['/Home/Futhark']"
+           [routerLinkActive]="'Active'" [routerLinkActiveOptions]="{exact:false}">Futhark</a>
+        <a class="Nav-link" [routerLink]="['/Home/Orkhon']"
+           [routerLinkActive]="'Active'" [routerLinkActiveOptions]="{exact:false}">Orkhon</a>
+        <a class="Nav-link" [routerLink]="['/Home/Yenisei']"
+           [routerLinkActive]="'Active'" [routerLinkActiveOptions]="{exact:false}">Yenisei</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="Container-fluid" style="margin-top: 60px">
+  <router-outlet></router-outlet>
+</div>

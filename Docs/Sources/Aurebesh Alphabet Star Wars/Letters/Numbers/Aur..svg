@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN"
+	"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="80.935692"
+   height="149.99959"
+   id="svg2660">
+  <defs
+     id="defs2662" />
+  <g
+     transform="translate(-373.81789,-547.71989)"
+     id="layer1">
+    <g
+       transform="matrix(2.3804616,0,0,2.3804616,2920.9118,175.50572)"
+       id="g3276">
+      <path
+         d="M -1070,187.375 L -1070,219.375 L -1057,219.375 L -1057,187.375 L -1070,187.375 z M -1049,187.375 L -1049,219.375 L -1036,219.375 L -1036,187.375 L -1049,187.375 z"
+         id="rect3895"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.59999982;stroke-opacity:1" />
+      <rect
+         width="13"
+         height="19"
+         x="-1059.5"
+         y="156.36218"
+         id="rect5110"
+         style="fill:#000000;fill-opacity:0;stroke:none;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:3.59999982;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
