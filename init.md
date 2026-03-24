@@ -65,7 +65,7 @@ ng g c Shared/components/svg --type=component
 
 ng g s Shared/services/Alphabet --type=service
 
-#for style
+# for style
 npm i @qrsln/lootstrap
 npm i @fortawesome/fontawesome-free
 
